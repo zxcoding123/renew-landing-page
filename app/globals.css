@@ -2,6 +2,12 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+@theme {
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-sora);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -116,6 +122,19 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-animated-gradient {
+  background: linear-gradient(270deg, #FAF4ED, #F8E6D6, #F6D2B5);
+  background-size: 600% 600%;
+  animation: gradientMove 15s ease infinite;
+}
+
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -123,4 +142,20 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  body {
+  font-family: var(--font-inter);
 }
+  .font-sora{
+    font-family: 'Sora';
+  }
+
+  .font-inter{
+    font-family: 'Inter';
+  }
+
+  .font-jetbrains-mono{
+    font-family: 'JetBrains Mono';
+  }
+}
+
