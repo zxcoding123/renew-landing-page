@@ -15,9 +15,6 @@ export default function Navbar() {
           <a href="#features" className="hidden md:inline-block text-gray-700 hover:text-[#FF5B00]">
             Features
           </a>
-          <a href="#pricing" className="hidden md:inline-block text-gray-700 hover:text-[#FF5B00]">
-            Pricing
-          </a>
           <a href="#about" className="hidden md:inline-block text-gray-700 hover:text-[#FF5B00]">
             About
           </a>
