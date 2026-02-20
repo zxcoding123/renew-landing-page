@@ -174,7 +174,12 @@
   body {
     background-color: #FAF4ED;
   font-family: var(--font-inter);
-}
+  }
+
+  .font-serif{
+    font-family: 'Playfair Display', sans-serif;
+  }
+  
   .font-sora{
     font-family: 'Sora';
   }

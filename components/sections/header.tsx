@@ -1,14 +1,27 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   return (
-    <header className="w-full bg-transparent fixed top-0 left-0 z-50 font-mono">
+    <header
+      className={`w-full fixed top-0 left-0 z-50 font-mono transition-all duration-300 ${
+        isScrolled ? "bg-white border-b border-gray-200" : "bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative">
         {/* Left items */}
         <div className="flex items-center gap-8">
@@ -28,7 +41,7 @@ export default function Navbar() {
         {/* Right items */}
         <div className="flex items-center gap-4">
           {/* Desktop CTA */}
-          <Button className="hidden md:inline-flex px-6 py-2 text-sm rounded-full">
+          <Button className="hidden md:inline-flex px-6 py-2 text-sm rounded-full cursor-pointer">
             Start Mixing
           </Button>
 
@@ -53,7 +66,7 @@ export default function Navbar() {
           <a href="#about" className="text-gray-700 hover:text-[#FF5B00]">
             About
           </a>
-          <Button className="px-6 py-2 text-sm w-full rounded-full">
+          <Button className="px-6 py-2 text-sm w-full rounded-full cursor-pointer">
             Start Mixing
           </Button>
         </div>

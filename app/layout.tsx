@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Sora, JetBrains_Mono } from "next/font/google";
+import { Inter, Sora, JetBrains_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -17,6 +17,11 @@ const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
+const playfairDisplay = Playfair_Display({
+  variable: "--font-serif",
+  subsets: ["latin"],
+})
+
 export const metadata: Metadata = {
   title: "FoCi - Ambient Sound Mixer",
   description: "Created by Ahmad Aquino",
@@ -30,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-       className={`${inter.variable} ${sora.variable} ${jetbrainsMono.variable}`}
+       className={`${inter.variable} ${sora.variable} ${jetbrainsMono.variable} ${playfairDisplay.variable}`}
       >
         {children}
       </body>

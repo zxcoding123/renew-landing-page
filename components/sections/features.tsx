@@ -55,7 +55,7 @@ export default function Features() {
             <span className="text-sm font-bold uppercase tracking-wider text-gray-500 mb-4 block">
               Features
             </span>
-            <h2 className="text-4xl font-medium leading-tight text-gray-900">
+            <h2 className="text-4xl font-medium leading-tight text-gray-900 ">
               Custom-built for deep work, relaxation, or finding your flow in any environment.
             </h2>
           </div>
