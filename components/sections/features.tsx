@@ -34,7 +34,7 @@ export default function Features() {
   ];
 
   return (
-    <section className="py-20 relative bg-white overflow-hidden">
+    <section className="py-20 relative bg-white overflow-hidden" id="features">
       
     <div className="circle top-10 left-1/4"></div>
   <div className="circle w-48 h-48 top-20 right-1/3 animation-delay-2000"></div>

@@ -36,7 +36,7 @@ export default function HowItWorks() {
   ]
 
   return (
-    <section className="py-20 bg-[#FAF9F6] relative overflow-hidden">
+    <section className="py-20 bg-[#FAF9F6] relative overflow-hidden" id="how-it-works">
           <div className="absolute top-0 left-0 w-60 h-60 bg-[#FFB347]/30 rounded-full filter blur-3xl animate-blob"></div>
           <div className="absolute bottom-0 right-0 w-72 h-72 bg-[#FF5B00]/20 rounded-full filter blur-3xl animate-blob animation-delay-2000"></div>
       <div className="max-w-7xl mx-auto px-6">

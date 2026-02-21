@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 
@@ -43,14 +44,16 @@ export default function CTA() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-10"
         >
-          <Button className={`px-10 py-7 mt-4 text-lg rounded-4xl 
+          <Link href="/mix">
+            <Button className={`px-10 py-7 mt-4 text-lg rounded-4xl 
                           bg-white text-black border
                           hover:bg-[#FFFFFF] hover:text-[#FF5B00] 
                           hover:border-[#FF5B00]
                           transition-all duration-500 ease-in-out cursor-pointer
                           `}>
-            Start Your Session
-          </Button>
+              Start Your Session
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>
