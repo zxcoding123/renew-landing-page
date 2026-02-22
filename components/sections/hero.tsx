@@ -93,15 +93,17 @@ export default function Hero() {
               Get Started
             </Button>
           </Link>
-      
-          <Button className={`px-10 py-7 mt-4 text-lg rounded-4xl ml-2
-                          bg-[#F6D2B5] text-black border
-                          hover:bg-[#FFFFFF] hover:text-[#FF5B00] 
-                          hover:border-[#FF5B00]
-                          transition-all duration-500 ease-in-out cursor-pointer
-                          ${isVisible ? "opacity-100 blur-0" : "opacity-0 blur-sm"}`}>
-        Find Mixes
-      </Button>
+
+          <Link href="/mixes">
+            <Button className={`px-10 py-7 mt-4 text-lg rounded-4xl ml-2
+                            bg-[#F6D2B5] text-black border
+                            hover:bg-[#FFFFFF] hover:text-[#FF5B00] 
+                            hover:border-[#FF5B00]
+                            transition-all duration-500 ease-in-out cursor-pointer
+                            ${isVisible ? "opacity-100 blur-0" : "opacity-0 blur-sm"}`}>
+              Find Mixes
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

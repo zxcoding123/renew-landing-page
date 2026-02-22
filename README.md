@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🎧 FoCi
+Find your flow in the depth of sound.
 
-## Getting Started
+FoCi is a minimalist productivity environment designed to drown out the noise of the world. Unlike standard lo-fi playlists, FoCi focuses on deep frequency soundscapes—brown noise, low-end atmospheric drones, and rhythmic pulses—specifically engineered to enhance cognitive endurance and deep work.
 
-First, run the development server:
+✨ The Philosophy
+Most productivity apps focus on managing time. FoCi focuses on protecting it. By utilizing deep-frequency audio, the app helps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Mask environmental distractions (office chatter, traffic, humming electronics).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Reduce cognitive load by providing a consistent, non-intrusive auditory anchor.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Induce Flow States faster through curated "Deep Sound" profiles.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🛠️ Key Features
+🔊 Curated Sound Engine
+A library of high-fidelity, seamless loops including:
 
-## Learn More
+Deep Brown Noise: For heavy masking and anxiety reduction.
 
-To learn more about Next.js, take a look at the following resources:
+Subterranean Hum: Low-frequency drones for intense coding or writing sessions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Atmospheric Textures: Subtle, non-melodic layers like distant rain or heavy wind.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🎚️ Minimalist Mixer
+Layer different deep sounds to create your perfect acoustic environment. Save your favorite "Focus Profiles" for different tasks.
 
-## Deploy on Vercel
+⏱️ Deep Work Timer
+An integrated, non-intrusive timer that tracks your focus sessions without jarring alarms. It fades sounds in and out to gently transition you between work and rest.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🎨 Design Principles
+Zero Distraction: No social feeds, no complex settings, no clutter.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Dark-Mode First: Designed to be easy on the eyes during late-night sessions.
+
+Fluid UI: Smooth transitions and a calm aesthetic that mirrors the audio experience.
+
+🚀 Future Roadmap
+[ ] Adaptive Audio: Sounds that subtly change based on your session length.
+
+[ ] Offline Mode: Full PWA support for focus anywhere.
+
+[ ] Hardware Integration: Support for dedicated media keys and spatial audio.

@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function Saying() {
   return (
-    <section className="py-20 flex bg-[#F6D2B5] items-center justify-center px-6 h-[50vh]" id="about">
+    <section className="py-20 flex bg-[#F6D2B5] items-center justify-center px-6 h-fi lg:h-[50vh]" id="about">
       <motion.div
         initial={{ opacity: 0, y: 20, filter: "blur(5px)" }}
         whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}

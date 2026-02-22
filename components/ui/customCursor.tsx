@@ -36,7 +36,7 @@ export default function CustomCursor() {
   return (
     <div
       ref={cursorRef}
-      className="pointer-events-none fixed w-8 h-8 bg-transparent rounded-full z-9999
+      className="hidden lg:block pointer-events-none fixed w-8 h-8 bg-transparent rounded-full z-9999
        mix-blend-multiply blur-[1px] border-[#FF5B00] border"
     />
   )
